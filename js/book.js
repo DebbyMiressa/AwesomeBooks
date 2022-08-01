@@ -7,7 +7,6 @@ export default class Book {
       },
     ];
     this.booksArray = this.getBooks();
-    console.log(this.booksArray);
   }
 
   getBooks() {
