@@ -1,10 +1,7 @@
+/* eslint-disable linebreak-style */
 export default class Book {
   constructor() {
     this.booksArray = [
-      {
-        title: 'Test',
-        value: 'Test',
-      },
     ];
     this.booksArray = this.getBooks();
   }
