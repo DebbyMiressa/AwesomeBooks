@@ -11,3 +11,15 @@ body {
     width: 60%;
     margin: 1rem auto;
 }
+
+.invalid {
+    color: red;
+}
+
+.title-check {
+    display: none;
+}
+
+.author-check {
+    display: none;
+}
