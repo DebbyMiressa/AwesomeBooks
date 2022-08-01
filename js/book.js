@@ -1,10 +1,6 @@
 export default class Book {
   constructor() {
     this.booksArray = [
-      {
-        title: 'Test',
-        value: 'Test',
-      },
     ];
     this.booksArray = this.getBooks();
   }
@@ -36,12 +32,8 @@ export default class Book {
     this.updateBooks();
   }
 
-  removeBook(book) {
-    const oldBook = [...this.booksArray];
-    if (book) {
-      this.booksArray = oldBook
-        .filter((el) => el.title !== this.book.title && el.name !== this.book.author);
-      this.updateBooks();
-    }
+  removeBook(index) {
+    this.booksArray.splice(index, 1);
+    this.updateBooks();
   }
 }

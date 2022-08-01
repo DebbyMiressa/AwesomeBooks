@@ -5,6 +5,7 @@ const titleCheck = document.querySelector('.title-check');
 const authorCheck = document.querySelector('.author-check');
 const bookList = document.querySelector('.list-wrapper');
 const docRange = document.createRange();
+const removeBtn = document.querySelectorAll('.removeBtn');
 
 const loadList = () => {
   const books = new Book();
@@ -23,11 +24,11 @@ const loadList = () => {
         </li>`;
   });
 
-  if (books.length === 0) {
+  if (books.booksArray.length === 0) {
     template += `
       <li class="list-item light">
         <div class="book-list-items book-list-items-empty">
-          <h5 class="book-items book-title">Book List is Empty</h5>
+          <div class="book-items book-title">Book List is Empty</div>
         </div>
       </li>
     `;
@@ -67,5 +68,16 @@ bookForm.addEventListener('submit', (event) => {
   book.addBook(nbook);
   setTimeout(() => {
     window.location.reload();
-  }, 2000);
+  }, 1000);
+});
+
+document.querySelector('body').addEventListener('click', (event) => {
+  if (event.target.classList.contains('removeBtn')) {
+    const index = event.target.getAttribute('data-book-index');
+    const book = new Book();
+    book.removeBook(index);
+    setTimeout(() => {
+      window.location.reload();
+    }, 500);
+  }
 });
