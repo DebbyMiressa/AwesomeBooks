@@ -5,7 +5,6 @@ const titleCheck = document.querySelector('.title-check');
 const authorCheck = document.querySelector('.author-check');
 const bookList = document.querySelector('.list-wrapper');
 const docRange = document.createRange();
-const removeBtn = document.querySelectorAll('.removeBtn');
 
 const loadList = () => {
   const books = new Book();
