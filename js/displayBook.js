@@ -3,6 +3,41 @@ import Book from './book.js';
 const bookForm = document.getElementById('bookForm');
 const titleCheck = document.querySelector('.title-check');
 const authorCheck = document.querySelector('.author-check');
+const bookList = document.querySelector('.list-wrapper');
+const docRange = document.createRange();
+
+const loadList = () => {
+  const books = new Book();
+  let template = '<ul class="book-list">';
+  books.booksArray.forEach((book, i) => {
+    template += `<li class="list-item ${i % 2 !== 0 ? 'dark' : 'light'}">
+          <div class="book-list-items">
+            <div>${book.title}</div>
+            <div>${book.author}</div>
+            <button id="btn-${i}" data-book-index="${i}" type="button" class="removeBtn">
+            Remove
+            <input type="hidden" id="removeBtnId" value="${i}">
+            </button>
+          </div>
+          <hr>
+        </li>`;
+  });
+
+  if (books.length === 0) {
+    template += `
+      <li class="list-item light">
+        <div class="book-list-items book-list-items-empty">
+          <h5 class="book-items book-title">Book List is Empty</h5>
+        </div>
+      </li>
+    `;
+  }
+
+  template += '</ul>';
+  return docRange.createContextualFragment(template);
+};
+
+bookList.append(loadList());
 
 const validateForm = (title, author) => {
   if (title === '' || title === undefined) {
