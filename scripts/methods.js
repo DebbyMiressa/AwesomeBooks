@@ -1,11 +1,10 @@
 /* eslint-disable linebreak-style */
 const bookForm = document.getElementById('bookForm');
 const parent = document.querySelector('.container');
-
 const bookList = document.createElement('div');
 bookList.className = 'bookList';
-
-const bookData = [];
+// window.localStorage.clear();
+let bookData = [];
 
 function dataLoader() {
   if (!localStorage.getItem('bookData')) {
@@ -16,12 +15,22 @@ function dataLoader() {
     Object.values(bookObjects).forEach((val, i) => {
       bookList.innerHTML
         += `
-            ${val.title}   ${val.author}<br>
+            <div class="book_${i} d-flex justify-content-between"><span class="p-2">"${val.title}" by ${val.author}</span><span class="ml-auto p-2"><button type="button" id="${i}" class="remove">Remove</button></span></div>
         `;
     });
   }
   parent.insertBefore(bookList, bookForm);
   bookList.getBoundingClientRect();
+  console.log(localStorage.getItem('bookData'));
+  bookData = JSON.parse(localStorage.getItem('bookData'));
+  const len = bookData.length;
+  for (let i = 0; i < len; i += 1) {
+    if (i % 2 === 0) {
+      document.querySelector(`.book_${i}`).style.backgroundColor = 'gray';
+    } else {
+      document.querySelector(`.book_${i}`).style.backgroundColor = 'white';
+    }
+  }
 }
 window.addEventListener('load', dataLoader);
 
@@ -38,8 +47,14 @@ class Methods {
     dataLoader();
   }
 
-  removeBook() {
-    const au = this.author;
+  removeBook(index) {
+    bookData.splice(index, 1);
+    // eslint-disable-next-line prefer-const
+    let obj = JSON.parse(localStorage.getItem('bookData'));
+    obj.splice(index, 1);
+    localStorage.setItem('bookData', JSON.stringify(obj));
+    this.author = null;
+    dataLoader();
   }
 }
 
@@ -48,4 +63,14 @@ const title = document.getElementById('title');
 const author = document.getElementById('author');
 submitBtnn.addEventListener('click', () => {
   new Methods(title.value, author.value).addBook();
+});
+
+parent.addEventListener('click', (e) => {
+  if (e.target.classList.contains('remove')) {
+    let i = 0;
+    while (e.target.id !== `${i}`) {
+      i += 1;
+    }
+    new Methods().removeBook(`${i}`);
+  }
 });
