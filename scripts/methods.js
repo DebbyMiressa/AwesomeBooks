@@ -21,12 +21,12 @@ function dataLoader() {
   }
   parent.insertBefore(bookList, bookForm);
   bookList.getBoundingClientRect();
-  console.log(localStorage.getItem('bookData'));
+  //   console.log(localStorage.getItem('bookData'));
   bookData = JSON.parse(localStorage.getItem('bookData'));
   const len = bookData.length;
   for (let i = 0; i < len; i += 1) {
     if (i % 2 === 0) {
-      document.querySelector(`.book_${i}`).style.backgroundColor = 'gray';
+      document.querySelector(`.book_${i}`).style.backgroundColor = 'lightgray';
     } else {
       document.querySelector(`.book_${i}`).style.backgroundColor = 'white';
     }

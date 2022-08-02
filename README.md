@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-- Click [here](https://htmlpreview.github.io/?https://github.com/DebbyMiressa/) to get started with a live demo
+- Click [here](https://htmlpreview.github.io/?https://github.com/DebbyMiressa/AwesomeBooks/blob/book-class/index.html) to get started with a live demo
 
 ## Getting Started
 
