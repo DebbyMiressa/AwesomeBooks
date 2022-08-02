@@ -10,28 +10,16 @@
 <body>
     <div class="container">
         <h1>Awesome Books</h1>
-        <div>
-            Lorem ipsum <br>
-            Testeroo Testyy <br>
-            <button type="button">Remove</button>
-            <hr>
-        </div>
-        <div>
-            Second book <br>
-            Testeroo Testyy <br>
-            <button type="button">Remove</button>
-            <hr>
-        </div>
-        <form id="bookForm">
+        <div id="bookForm">
             <input type="text" name="title" id="title" placeholder="Title"><br>
             <small class="title-check invalid">Field is required</small>
             <br>
             <input type="text" name="author" id="author" placeholder="Author"><br>
             <small class="author-check invalid">Field is required</small><br>
-            <button type="submit">Add</button>
-        </form>
+            <button class="submit" type="button">Add</button>
+        </div>
     </div>
 
-    <script type="module" src="./scripts/displayBook.js"></script>
+    <script src="./scripts/methods.js"></script>
 </body>
 </html>
