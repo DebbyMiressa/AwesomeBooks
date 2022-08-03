@@ -1,17 +1,12 @@
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-}
-
-.container {
-  width: 60%;
-  margin: 1rem auto;
-}
-
 #title,
 #author {
-  width: 20%;
+  width: 100%;
+}
+
+#bookForm {
+  gap: 20px;
+}
+
+.submit {
+  align-self: end;
 }

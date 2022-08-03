@@ -2,8 +2,7 @@
 const bookForm = document.getElementById('bookForm');
 const parent = document.querySelector('.container');
 const bookList = document.createElement('div');
-bookList.className = 'bookList';
-// window.localStorage.clear();
+bookList.className = 'bookList w-50 border border-dark border-2';
 let bookData = [];
 
 function dataLoader() {
@@ -21,14 +20,11 @@ function dataLoader() {
   }
   parent.insertBefore(bookList, bookForm);
   bookList.getBoundingClientRect();
-  //   console.log(localStorage.getItem('bookData'));
   bookData = JSON.parse(localStorage.getItem('bookData'));
   const len = bookData.length;
   for (let i = 0; i < len; i += 1) {
     if (i % 2 === 0) {
       document.querySelector(`.book_${i}`).style.backgroundColor = 'lightgray';
-    } else {
-      document.querySelector(`.book_${i}`).style.backgroundColor = 'white';
     }
   }
 }
