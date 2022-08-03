@@ -2,18 +2,18 @@
 
 # Coding Challenges
 
-> This project is intended to design a website which anyone can access and enjoy solving the coding challenges.
+> "Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, you will learn how to manage data using JavaScript. Thanks to that your website will be more interactive. You will also use a [medium-fidelity](https://github.com/microverseinc/curriculum-javascript/blob/main/books/m2_plain_js_classes_v1_1.md) wireframe to build the UI.
 
 
 ## Built With
 
 - HTML, CSS, Javascript
-- Bootstrap
+- No frameworks used
 - Github
 
 ## Live Demo
 
-- Click [here]() to get started with a live demo
+- Click [here]( https://debbymiressa.github.io/AwesomeBooks/) to get started with a live demo
 
 ## Getting Started
 
@@ -24,7 +24,6 @@ To get a local copy up and running follow these simple example steps.
 - Have git installed.
 - Have text editor installed.
 - Have node installed.
-- Have bootstrap framework installed.
 - Have CSS,HTML & JS Linters installed and configured. For further information, visit [this link](https://github.com/microverseinc/linters-config/blob/master/README.md) to get better understanding on each linters used on this project.
 
 ## Authors

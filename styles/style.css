@@ -10,6 +10,7 @@ body {
 .container {
   width: 60%;
   margin: 1rem auto;
+  text-align: center;
 }
 
 .invalid {
@@ -28,4 +29,49 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  border: 1px solid black;
+}
+
+.submit-btn {
+  float: right;
+  margin-right: 34.5%;
+}
+
+.dark {
+  background-color: #ddd;
+}
+
+.light {
+  background-color: white;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+}
+
+.divider > span {
+  border-bottom: 3px solid black;
+  width: 15%;
+}
+
+.list-item {
+  margin-bottom: 0.7rem;
+  padding: 0 2rem;
+}
+
+.book-list-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.removeBtn {
+  padding: 0.5rem 2rem;
+  margin: 0 2rem;
+}
+
+#author,
+#title {
+  width: 30%;
 }

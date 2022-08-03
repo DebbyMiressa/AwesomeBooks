@@ -1,3 +1,5 @@
+/* eslint-disable linebreak-style */
+
 import Book from './book.js';
 
 const bookForm = document.getElementById('bookForm');
@@ -10,16 +12,13 @@ const loadList = () => {
   const books = new Book();
   let template = '<ul class="book-list">';
   books.booksArray.forEach((book, i) => {
-    template += `<li class="list-item ${i % 2 !== 0 ? 'dark' : 'light'}">
+    template += `<li class="list-item ${i % 2 !== 0 ? 'light' : 'dark'}">
           <div class="book-list-items">
-            <div>${book.title}</div>
-            <div>${book.author}</div>
+            <h4>"${book.title}" by ${book.author}</h4>
             <button id="btn-${i}" data-book-index="${i}" type="button" class="removeBtn">
-            Remove
-            <input type="hidden" id="removeBtnId" value="${i}">
+              Remove
             </button>
           </div>
-          <hr>
         </li>`;
   });
 
