@@ -10,6 +10,7 @@ body {
 .container {
   width: 60%;
   margin: 1rem auto;
+  text-align: center;
 }
 
 .invalid {
@@ -29,3 +30,47 @@ body {
   margin: 0;
   padding: 0;
 }
+/* 
+.submit-btn {
+  text-align: right;
+}
+
+.dark {
+  background-color: #DDDDDD;
+}
+
+.light {
+  background-color: white;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+}
+
+.divider > span {
+  border-bottom: 3px solid black;
+  width: 30% ;
+}
+
+.book-list {
+  border: 1px solid black;
+  
+}
+
+.list-item{
+  margin-bottom: .7rem;
+  padding: 0 2rem;
+}
+
+.book-list-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.removeBtn {
+  padding: .5rem 2rem;
+  margin: 0 2rem;
+} */
+
