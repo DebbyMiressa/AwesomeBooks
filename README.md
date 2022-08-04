@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Coding Challenges
+# Awesome Books
 
-> "Awesome books" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, you will learn how to manage data using JavaScript. Thanks to that your website will be more interactive. You will also use a [medium-fidelity](https://github.com/microverseinc/curriculum-javascript/blob/main/books/m2_plain_js_classes_v1_1.md) wireframe to build the UI.
+> "Awesome Books" is a simple website that displays a list of books and allows you to add and remove books from that list. By building this application, you will learn how to manage data using JavaScript. Thanks to that your website will be more interactive. You will also use a [medium-fidelity](https://github.com/microverseinc/curriculum-javascript/blob/main/books/m2_plain_js_classes_v1_1.md) wireframe to build the UI.
 
 
 ## Built With
@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-- Click [here]( https://debbymiressa.github.io/AwesomeBooks/) to get started with a live demo
+- Click [here](https://debbymiressa.github.io/AwesomeBooks/) to get started with a live demo
 
 ## Getting Started
 
