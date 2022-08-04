@@ -103,10 +103,23 @@ footer {
   padding: 10px;
   font-weight: bold;
   text-align: center;
-  width: 90%;
+  width: 93%;
   margin: 1rem auto;
 }
 
 .contact-items {
   text-align: left;
+}
+
+.contact-items li {
+  line-height: 3rem;
+}
+
+.contact-wrp {
+  width: 60%;
+  margin: 1rem auto;
+}
+
+.contact-wrp p {
+  line-height: 2rem;
 }
