@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-- Click [here](https://github.com/DebbyMiressa/AwesomeBooks/blob/refactor-to-use-JavaScript-classes/index.html) to get started with a live demo
+- Click [here](https://debbymiressa.github.io/AwesomeBooks/) to get started with a live demo
 
 ## Getting Started
 
