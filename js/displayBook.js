@@ -1,5 +1,3 @@
-/* eslint-disable linebreak-style */
-
 import Book from './book.js';
 
 const bookForm = document.getElementById('bookForm');

@@ -1,5 +1,3 @@
-/* eslint-disable linebreak-style */
-
 const timeDisplay = document.getElementById('date');
 
 function refreshTime() {
